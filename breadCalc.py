@@ -1,42 +1,7 @@
 import string
+from ingredients import ölands_vete, ramlösa_tipo, caputo_tipo, tomatoe_sauce, honey, salt, yeast, mozzarella, olive_oil
 
 
-ramlösa_tipo = {
-    "weight" : 2000,
-    "price" : 34
-}
-ölands_vete = {
-    "weight" : 1250,
-    "price" : 41
-}
-caputo_tipo = {
-    "weight" : 1000,
-    "price" : 27
-}
-yeast = {
-    "weight" : 50,
-    "price" : 4
-}
-salt = {
-    "weight" : 500,
-    "price" : 19
-}
-honey = {
-    "weight" : 350,
-    "price" : 50
-}
-mozzarella = {
-    "weight" : 500,
-    "price" : 63
-}
-tomatoe_sauce = {
-    "weight": 400,
-    "price" : 25
-}
-olive_oil = {
-    "weight" : 750,
-    "price" : 66
-}
 def pizza_dough_cost(flour_name:string, flour_ammount:float, yeast_name:string, yeast_ammount:float,salt_name:string, salt_ammount:float):
     cost = (flour_ammount*(flour_name["price"]/flour_name["weight"]))+(yeast_ammount*(yeast_name["price"]/yeast_name["weight"]))
     cost += salt_ammount*(salt_name["price"]/salt_name["weight"])
